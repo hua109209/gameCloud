@@ -18,5 +18,3 @@ zuul:
     route1:
       path: /user/**
       serviceId: user
-
-

@@ -6,7 +6,7 @@ spring:
     name: discovery
 eureka:
   instance:
-    hostname: rccdev.haoduoke.cn
+    hostname: localhost
   client:
     register-with-eureka: false
     fetch-registry: false

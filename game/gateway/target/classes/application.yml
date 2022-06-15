@@ -12,11 +12,9 @@ eureka:
     fetch-registry: true
     register-with-eureka: true
   instance:
-    hostname: rccdev.haoduoke.cn
+    hostname: localhost
 zuul:
   routes:
     route1:
       path: /user/**
       serviceId: user
-
-
