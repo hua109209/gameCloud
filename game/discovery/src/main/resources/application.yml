@@ -1,0 +1,17 @@
+# 应用名称
+server:
+  port: 8080
+spring:
+  application:
+    name: discovery
+eureka:
+  instance:
+    hostname: localhost
+  client:
+    register-with-eureka: false
+    fetch-registry: false
+    service-url:
+      defaultZone: http://${eureka.instance.hostname}:8080/eureka
+
+
+

@@ -1,0 +1,15 @@
+# 应用名称
+spring:
+  application:
+    name: user
+
+eureka:
+  client:
+    service-url:
+      defaultZone: http://${eureka.instance.hostname}:8080/eureka
+    fetch-registry: true
+    register-with-eureka: true
+  instance:
+    hostname: localhost
+server:
+  port: 8081
