@@ -8,13 +8,24 @@ server:
 eureka:
   client:
     service-url:
-      defaultZone: http://${eureka.instance.hostname}:8080/eureka
+      defaultZone: http://127.0.0.1:8080/eureka
     fetch-registry: true
     register-with-eureka: true
   instance:
-    hostname: localhost
+    prefer-ip-address: true
 zuul:
   routes:
     route1:
       path: /user/**
       serviceId: user
+management:
+  health:
+    redis:
+      enabled: false
+  endpoints:
+    web:
+      exposure:
+        include: "*"
+  endpoint:
+    health:
+      show-details: always

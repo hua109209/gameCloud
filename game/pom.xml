@@ -13,6 +13,7 @@
         <module>discovery</module>
         <module>user</module>
         <module>gateway</module>
+        <module>admin</module>
     </modules>
 
     <properties>
